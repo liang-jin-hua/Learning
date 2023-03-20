@@ -10,7 +10,6 @@ class Solution:
         for i in range(0, n, 2 * k):
             q= i+k if i + k < n else n
             nums[i:q]=nums[i:q][::-1]
-            print(nums[i:q])
         return "".join(nums)
 
 re=Solution()

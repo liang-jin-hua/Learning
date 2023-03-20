@@ -6,7 +6,6 @@ class Solution:
     def reverseStr(self, s: str, k: int) -> str:
         nums=list(s)
         n=len(nums)
-        print(n)
         for i in range(0, n, 2 * k):
             q= i+k if i + k < n else n
             nums[i:q]=nums[i:q][::-1]
